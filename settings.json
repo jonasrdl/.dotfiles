@@ -9,7 +9,7 @@
   "git.confirmSync": false,
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "editor.matchBrackets": false,
+  "editor.matchBrackets": "always",
   "editor.cursorBlinking": "smooth",
   "liveServer.settings.donotShowInfoMsg": true,
   "workbench.iconTheme": "material-icon-theme",

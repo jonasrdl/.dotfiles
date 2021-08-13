@@ -1,0 +1,51 @@
+{
+  "git.enableCommitSigning": true,
+  "editor.autoClosingBrackets": "always",
+  "editor.formatOnSave": true,
+  "editor.fontLigatures": true,
+  "prettier.enableDebugLogs": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "editor.matchBrackets": false,
+  "editor.cursorBlinking": "smooth",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.fontFamily": "Fira Code, Consolas, 'Courier New', monospace",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "C_Cpp.updateChannel": "Insiders",
+  "workbench.tree.indent": 14,
+  "workbench.tree.renderIndentGuides": "always",
+  "tabnine.experimentalAutoImports": true,
+  "workbench.startupEditor": "none",
+  "editor.tabSize": 2,
+  "explorer.confirmDelete": false,
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "redhat.telemetry.enabled": true,
+  "terminal.integrated.fontFamily": "Consolas",
+  "explorer.confirmDragAndDrop": false,
+  "prettier.printWidth": 999999,
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter.notebook.ipynb"
+  },
+  "java.project.importHint": false,
+  "editor.inlineSuggest.enabled": true,
+  "prettier.singleQuote": true,
+  "github.copilot.enable": {
+    "*": false,
+    "yaml": false,
+    "plaintext": false,
+    "markdown": false
+  },
+  "git.ignoreRebaseWarning": true,
+  "vsicons.dontShowNewVersionMessage": true,
+  "window.zoomLevel": 1,
+  "editor.cursorSmoothCaretAnimation": true
+}

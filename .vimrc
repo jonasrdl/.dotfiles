@@ -3,3 +3,7 @@ syntax on
 set tabstop=2
 set shiftwidth=2
 set expandtab
+set noswapfile
+set hlsearch
+set ignorecase
+set incsearch

@@ -116,11 +116,9 @@ if ! shopt -oq posix; then
   fi
 fi
 
-cd /mnt/e
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-neofetch
-cd /home/jonas
+PS1="[\e[0;35m\u\e[0m@\e[0;32m\h\e[0m \W]\$ \e[0m"

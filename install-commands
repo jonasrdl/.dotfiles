@@ -1,0 +1,5 @@
+//Installation Video link
+https://www.youtube.com/watch?v=cLB008-FJ5o&t=2259s
+
+//Install Fontawesome Font for Icons in Polybar
+sudo pacman -S ttf-font-awesome 

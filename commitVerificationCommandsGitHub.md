@@ -32,4 +32,4 @@ Finally the git configuration
 
 `git config --global gpg.program gpg2`   
 `git config --global commit.gpgsign true`   
-`git config --global user.signinKey <YOURKEY>`   
+`git config --global user.signingKey <YOURKEY>`   

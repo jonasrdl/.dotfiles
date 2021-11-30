@@ -1,0 +1,8 @@
+Theme: https://addons.mozilla.org/de/firefox/addon/matte-black-v1/
+
+Extensions:
+  - https://addons.mozilla.org/de/firefox/addon/bitwarden-password-manager/
+  - https://addons.mozilla.org/de/firefox/addon/ublock-origin/
+  - https://addons.mozilla.org/en-US/firefox/addon/cookie-autodelete/
+  - https://addons.mozilla.org/en-US/firefox/addon/smart-https-revived/
+  - https://addons.mozilla.org/en-US/firefox/addon/decentraleyes/

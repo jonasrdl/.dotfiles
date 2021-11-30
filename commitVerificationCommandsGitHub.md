@@ -1,5 +1,7 @@
 ## Install GPG
 `sudo pacman -S gnupg`
+/
+`sudo apt install gnupg`
 
 ## Generate GPG Key
 `gpg --full-generate-key`

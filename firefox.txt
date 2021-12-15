@@ -1,9 +1,13 @@
 Theme: https://addons.mozilla.org/de/firefox/addon/matte-black-v1/
 
 Extensions:
-  - https://addons.mozilla.org/de/firefox/addon/bitwarden-password-manager/
-  - https://addons.mozilla.org/de/firefox/addon/ublock-origin/
-  - https://addons.mozilla.org/en-US/firefox/addon/decentraleyes/
-  - https://addons.mozilla.org/de/firefox/addon/github-file-icons/
+https://addons.mozilla.org/de/firefox/addon/bitwarden-password-manager/
+
+https://addons.mozilla.org/de/firefox/addon/ublock-origin/
+
+https://addons.mozilla.org/en-US/firefox/addon/decentraleyes/
+
+https://addons.mozilla.org/de/firefox/addon/github-file-icons/
+
 
 In about:config set the option "layout.frame_rate" to "144" (for 144hz)

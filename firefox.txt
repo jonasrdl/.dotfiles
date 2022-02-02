@@ -11,3 +11,5 @@ https://addons.mozilla.org/de/firefox/addon/github-file-icons/
 
 
 In about:config set the option "layout.frame_rate" to "144" (for 144hz) and "layers.acceleration.force-enabled" to "true"
+
+To fix a WebGL bug and enable 144hz: about:config "security.sandbox.content.read_path_whitelist" -> /sys/class/drm/card0/device/config,/sys/class/drm/renderD128/device/config,/sys/class/drm/controlD64/device/config,/sys/devices/pci0000:00/0000:00:02.0/subsystem

@@ -1,23 +1,40 @@
-set nocompatible            " disable compatibility to old-time vi
-set showmatch               " show matching brackets.
-set ignorecase              " case insensitive matching
-set mouse=v                 " middle-click paste with mouse
-set hlsearch                " highlight search results
-set autoindent              " indent a new line the same amount as the line just typed
-set number                  " add line numbers
-set wildmode=longest,list   " get bash-like tab completions
-set cc=88                   " set colour columns for good coding style
-filetype plugin indent on   " allows auto-indenting depending on file type
-set tabstop=4               " number of columns occupied by a tab character
-set expandtab               " convert tabs to white space
-set shiftwidth=4            " width for autoindents
-set softtabstop=4           " see multiple spaces as tabstops so <BS> does the right thing
+" init.vim
 
-call plug#begin()
-Plug 'ayu-theme/ayu-vim'
-Plug 'https://github.com/vim-airline/vim-airline'
+" Enable Vim-Plug
+call plug#begin('~/.local/share/nvim/plugged')
+
+" Plugins
+Plug 'fatih/vim-go'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
+Plug 'preservim/nerdtree'
+
+" Colorschemes
+Plug 'morhetz/gruvbox'
+Plug 'joshdick/onedark.vim'
+" Add other colorschemes here if desired
+
+" Keybindings
+let g:go_fmt_command = "goimports"
+autocmd FileType go nmap <leader>r <Plug>(go-run)
+autocmd FileType go nmap <leader>b <Plug>(go-build)
+autocmd FileType go nmap <leader>t <Plug>(go-test)
+autocmd FileType go nmap <leader>c <Plug>(go-coverage)
+autocmd FileType go nmap <leader>d <Plug>(go-def)
+autocmd FileType go nmap <leader>i <Plug>(go-info)
+autocmd FileType go nmap <leader>a <Plug>(go-alternate)
+
+" Toggle NERDTree with Ctrl+n
+nnoremap <C-n> :NERDTreeToggle<CR>
+" Set NERDTree as the default on startup
+autocmd VimEnter * NERDTree
+" Hide NERDTree on file open
+autocmd BufEnter,FocusGained * if !exists("g:NERDTree") | NERDTreeFind | wincmd p | endif
+
+
+" Enable plugin loading
 call plug#end()
 
-set termguicolors
-let ayucolor="dark"
-colorscheme ayu
+" Set colorscheme
+" colorscheme gruvbox
+colorscheme one

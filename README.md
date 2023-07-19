@@ -1,4 +1,5 @@
 # .dotfiles
-### Config files for some stuff
+## Config files for some stuff
 
-settings.json is for vscode, rest is self explaining
+### Wallpapers
+In `scripts/` you can find scripts to change wallpapers, it cycle's through them every 5 minutes 

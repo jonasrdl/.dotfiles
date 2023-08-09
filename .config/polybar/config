@@ -34,14 +34,15 @@ line-size = 3
 line-color = #f00
 
 border-size = 4
-border-color =
+border-color = 
 padding-left = 0
 padding-right = 2
 
 module-margin-left = 1
 module-margin-right = 2
 
-font-0 = mono:pixelsize=11;1
+;font-0 = mono:pixelsize=11;1
+font-0 = Jetbrains Mono Nerd Font:pixelsize=11;1
 ;font-1 = FontAwesome:pixelsize=11;1
 ;font-1 = Font Awesome 5 Free:style=Solid:size=10;4
 ;font-2 = siji:pixelsize=10;1
@@ -51,7 +52,7 @@ font-3 = Font Awesome 6 Brands:pixelsize=10;3
 
 modules-left = i3
 modules-center = xwindow
-modules-right = volume memory cpu temperature time kernel-version
+modules-right = memory cpu temperature battery time kernel-version
 
 tray-position = right
 tray-padding = 2
@@ -190,7 +191,7 @@ card = intel_backlight
 [module/cpu]
 type = internal/cpu
 interval = 2
-format-prefix = " "
+format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline =  #456771
 label = %percentage%%
@@ -198,7 +199,7 @@ label = %percentage%%
 [module/memory]
 type = internal/memory
 interval = 2
-format-prefix = " "
+format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline =  #456771
 label = %percentage_used%%
@@ -245,11 +246,11 @@ format-disconnected =
 type = internal/date
 interval = 5
 
-date =
-date-alt = " %Y-%m-%d"
+date = %d.%m.%Y
+;date-alt = " %Y-%m-%d"
 
 time = %H:%M
-time-alt = %H:%M:%S
+;time-alt = %H:%M:%S
 
 format-prefix = 
 format-prefix-foreground = ${colors.foreground-alt}
@@ -293,7 +294,7 @@ exec-if = pgrep -x cmus
 interval = 1
 
 click-left = cmus-remote --pause
-click-right = cmus-remote --stop\
+click-right = cmus-remote --stop
 
 [module/battery]
 type = internal/battery
@@ -311,9 +312,12 @@ format-full-prefix = " "
 format-full-prefix-foreground = ${colors.foreground-alt}
 format-full-underline = ${self.format-charging-underline}
 
-ramp-capacity-0 = 
-ramp-capacity-1 = 
-ramp-capacity-2 = 
+;ramp-capacity-0 = 
+ramp-capacity-0 = 
+;ramp-capacity-1 = 
+ramp-capacity-1 =
+;ramp-capacity-2 = 
+ramp-capacity-2 = 
 ramp-capacity-foreground = ${colors.foreground-alt}
 
 animation-charging-0 = 
@@ -321,6 +325,15 @@ animation-charging-1 = 
 animation-charging-2 = 
 animation-charging-foreground = ${colors.foreground-alt}
 animation-charging-framerate = 750
+
+label-charging = charging %percentage%%
+label-charging-foreground = ${colors.foreground-alt}
+label-charging-underline = ${self.format-charging-underline}
+
+label-discharging =   %percentage%%
+label-discharging-foreground = ${colors.foreground-alt}
+label-discharging-underline = ${self.format-charging-underline}
+
 
 [module/temperature]
 type = internal/temperature
@@ -337,11 +350,12 @@ label-warn = %temperature%
 label-warn-foreground = ${colors.secondary}
 
 ramp-0 = 
-ramp-1 = 
+;ramp-1 = 
+ramp-1 = 
 ramp-2 = 
 ramp-foreground = ${colors.foreground-alt}
 
-format-prefix = " "
+format-prefix = ""
 format-prefix-foreground = #666
 
 
@@ -389,7 +403,8 @@ format-prefix-foreground = #666
 
 [module/time]
 type = custom/script
-exec = date
+;exec = date
+exec = /home/jriedel/scripts/german-date-time.sh
 interval = 1
 format-underline =  #456771
 format-prefix = " "

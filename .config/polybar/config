@@ -34,7 +34,7 @@ line-size = 3
 line-color = #f00
 
 border-size = 4
-border-color = 
+border-color =
 padding-left = 0
 padding-right = 2
 
@@ -313,11 +313,11 @@ format-full-prefix-foreground = ${colors.foreground-alt}
 format-full-underline = ${self.format-charging-underline}
 
 ;ramp-capacity-0 = 
-ramp-capacity-0 = 
+ramp-capacity-0 =
 ;ramp-capacity-1 = 
 ramp-capacity-1 =
 ;ramp-capacity-2 = 
-ramp-capacity-2 = 
+ramp-capacity-2 =
 ramp-capacity-foreground = ${colors.foreground-alt}
 
 animation-charging-0 = 

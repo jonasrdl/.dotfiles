@@ -35,7 +35,7 @@ bindsym $mod+L exec /bin/lock
 bindsym $mod+Shift+E exec i3-msg exit
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec --no-startup-id rofi -theme /home/jriedel/.config/rofi/themes/onedark.rasi -show run
+bindsym $mod+d exec --no-startup-id rofi -show drun -theme /home/jriedel/.config/rofi/themes/onedark.rasi -show run
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left

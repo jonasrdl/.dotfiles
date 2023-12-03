@@ -1,2 +1,3 @@
 #!/bin/bash
-echo $(yay -Qu | wc -l)
+yay -Sy >/dev/null
+echo $(yay -Qu | wc -l
